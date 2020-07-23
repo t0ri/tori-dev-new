@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Navigation from './Navigation/Navigation'
 import Index from './Index/Index'
@@ -9,26 +8,14 @@ import Articles from './Articles/Articles'
 import './App.scss'
 
 
-// SiteRouter Function Component
-// Returns component that applies to current route
+// ToriDev Function Component
 // Displays at HTML Root
-function SiteRouter() {
+function ToriDev() {
   // Set Web Page Title
   document.title = '@t0ri\'s website'
   return (
-    <Router>
-      <div id="SiteRouter">
-        {/* Checks Route, Returns Component */}
-        <Route path="/" exact component={Index} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/projects/:id" component={Projects} />
-        <Route path="/articles" component={Articles} />
-
-        {/* Renders Navigation Component */}
-        <Navigation />
-      </div>
-    </Router>
+    <div></div>
   )
 }
 
-export default SiteRouter
+export default ToriDev
