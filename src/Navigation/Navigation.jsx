@@ -1,100 +1,23 @@
-import React, { Component } from 'react'
-
-// eslint-disable-next-line no-unused-vars
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  withRouter,
-} from 'react-router-dom'
+import React from 'react'
 
 import './navigation.scss'
 
-// Navigation Class Component
+// Navigation Functional Component
 // Renders Navigation
-// Displayed by SiteRouter()
-class Navigation extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      // isFocused: false,
-    }
-
-    // Binding `this`
-    // this.handleFocus = this.handleFocus.bind(this)
-  }
-
-  // handleFocus(a) {
-  //   this.setState((state) => ({
-  //     isFocused: {
-  //       a: !state.isFocused
-  //     }
-  //   }))
-  // }
-
-  // eslint-disable-next-line consistent-return
-  // isFocused() {
-  //   // Destructuring state
-  //   const { isFocused } = this.state
-
-  //   if (isFocused === true) {
-  //     return 'underline'
-  //   }
-  // }
-
-  // eslint-disable-next-line consistent-return
-  isActive(linkPath) {
-    // Destructuring state & props
-    // const { isActive } = this.state
-    const { location } = this.props
-    const { pathname: pathName } = location
-
-    if (linkPath === pathName) {
-      return 'active'
-    }
-  }
-
-  render() {
-    return (
-      <nav>
-        <ul>
-          <li>
-            {/* Index/About Link */}
-            <Link to="/">
-              <span
-                className={this.isActive('/')}
-                // className={`${this.isFocused()} ${this.isActive('/')}`}
-                // onMouseEnter={this.handleFocus('/')}
-                // onMouseLeave={this.handleFocus('/')}
-              >
-                about
-              </span>
-            </Link>
-          </li>
-          <li>
-            {/* Projects Link */}
-            <span
-              className={this.isActive('/projects')}
-              // className={`${this.isFocused('/p')} ${this.isActive('/projects')}`}
-              // onMouseEnter={this.handleFocus('/projects')}
-              // onMouseLeave={this.handleFocus('/projects')}
-            >
-              <Link to="/projects">projects</Link>
-            </span>
-          </li>
-          <li>
-            {/* Articles Link */}
-            <span
-              className={this.isActive('/articles')}
-              // className={`${this.isFocused('/a')} ${this.isActive('/articles')}`}
-              // onMouseEnter={this.handleFocus('/articles')}
-              // onMouseLeave={this.handleFocus('/articles')}
-            >
-              <Link to="/articles">articles</Link>
-            </span>
-          </li>
-
+function Navigation() {
+  return (
+    <nav>
+      <ul>
+        <li id="logo">
+          {/* Logo Image */}
+          <img src="./img/sig-dark.png" alt="@t0ri signature" />
+        </li>
+        <li id="description">
+          <p><span role="img" aria-label="dizzy"> 💫</span> tori murray <span role="img" aria-label="woman">👩</span></p>
+          <p>frontend web</p>
+          <p><span role="img" aria-label="foggy">🌁</span> sf, ca <span role="img" aria-label="globe showing Americas">🌎</span></p>
+        </li>
+        <li id="socials">
           <li>
             {/* LinkedIn Link */}
             <a
@@ -128,12 +51,22 @@ class Navigation extends Component {
               <img src="./img/001-twitter.png" alt="Twitter" />
             </a>
           </li>
-        </ul>
-      </nav>
-    )
-  }
+        </li>
+        <li>
+          {/* Projects Link */}
+          projects
+        </li>
+        <li>
+          {/* Articles Link */}
+          articles
+        </li>
+        <li>
+          {/* About Link */}
+          about
+        </li>
+      </ul>
+    </nav>
+  )
 }
 
-// eslint-disable-next-line react/jsx-props-no-spreading
-const NavigationRouter = withRouter((props) => <Navigation {...props} />)
-export default NavigationRouter
+export default Navigation

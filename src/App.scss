@@ -1,20 +1,24 @@
 @import './variables.scss';
 
 html {
-  height: 100%;
-  width: 100%;
-  overflow:hidden;
-  
-  background-color: $color-primary;
+  background-color: $color-foreground;
+  background-image: linear-gradient(160deg, $color-background 20%, $color-primary 100%);
   
   body {
-    margin: 10vh 5vw 10vh 5vw;
+    margin: 0 5vw 10vh 0;
     
-    div#SiteRouter {
+    div#tori-dev {
       font-family: $font-stack;
       font-size: $font-size;
       color: $color-dark;
       line-height: $font-line-height;
+      
+      display: flex;
+      @include flex-flow(row nowrap);
+      
+      div#content { 
+        margin-left: 20vw;
+      }
     }
   }
 }

@@ -14,7 +14,14 @@ function ToriDev() {
   // Set Web Page Title
   document.title = '@t0ri\'s website'
   return (
-    <div></div>
+    <div id="tori-dev">
+      <Navigation />
+      <div id="content">
+        <Index />
+        <Projects />
+        <Articles />
+      </div>
+    </div>
   )
 }
 

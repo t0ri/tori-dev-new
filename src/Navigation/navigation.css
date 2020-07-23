@@ -6,36 +6,35 @@
   text-shadow: inset 0 -0.175em white, inset 0 -0.175em white, inset 0 -0.175em white, inset 0 -0.175em white; }
 
 nav {
-  width: 100vw;
-  position: sticky;
-  bottom: 10vh;
-  margin-left: -5vw;
-  background-color: lavenderblush; }
+  width: 15vw;
+  position: fixed;
+  background-color: #fff; }
 
 nav ul {
-  width: 50vw;
+  width: 15vw;
+  height: 100vh;
   display: flex;
-  -webkit-flex-flow: row nowrap;
-  -moz-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 5vw;
   padding: 0; }
 
 nav ul li {
   list-style-type: none;
   font-size: 2.5em;
-  font-family: "Montserrat"; }
+  font-family: "Inconsolata", monospace, sans-serif;
+  margin-bottom: 3vh; }
 
 nav ul li span.active {
   font-weight: bold; }
@@ -45,4 +44,25 @@ nav ul li a {
   color: #000; }
 
 nav ul li a img {
-  height: 40px; }
+  height: 35px; }
+
+nav ul li#logo img {
+  height: 10vh; }
+
+nav ul li#description p {
+  font-size: .5em;
+  text-align: center;
+  font-family: "Montserrat"; }
+
+nav ul li#socials {
+  width: 10vw;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around; }

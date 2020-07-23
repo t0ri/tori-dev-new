@@ -6,7 +6,18 @@
   text-shadow: inset 0 -0.175em white, inset 0 -0.175em white, inset 0 -0.175em white, inset 0 -0.175em white; }
 
 section#Index {
-  height: 100vh; }
+  height: 90vh;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  margin-bottom: 15vh; }
 
 section#Index h1 {
   font-size: 3em;

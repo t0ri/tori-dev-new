@@ -2,36 +2,12 @@
 @import '/css/hover-min.css';
 
 section#Project {
-  height: 75vh;
-
-  overflow-x: visible;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-
-  &::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 2px;
-  }
-  
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .25);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .25);
-  }
-
   div#header {
-    width: 100vw;
-    height: 5vh;
-
-    position: fixed;
-    z-index: 99;
-
     margin: 0 0 0 -5vw;
-
-    background-color: $color-primary;
 
     h1 {
       font-size: 3em;
-      color: $color-dark;
+      color: $color-foreground;
   
       margin: 0 0 0 5vw;
     }
@@ -49,11 +25,11 @@ section#Project {
       @include flex-flow(column nowrap);
       @include justify-content(space-between);
 
-      width: 25vw;
-      height: 55vh;
+      width: 20vw;
+      height: 50vh;
       overflow: hidden;
 
-      margin-bottom: 12vh;
+      margin-bottom: 6vh;
       padding-bottom: 1vh;
 
       background-color: $color-background;

@@ -16,6 +16,7 @@ $color-success: #b3ffd2;
 $color-danger: #c5504d;
 $color-callout: #fef181;
 
+$color-gradient: $color-foreground, $color-primary;
 
 // Font Variables
 $font-size: 16px;
@@ -37,10 +38,10 @@ $font-sans: "Montserrat";
 
 // Mixins
 @mixin gradient($direction, $list) { 
-  background: -webkit-linear-gradient($direction, $list);
-  background: -moz-linear-gradient($direction, $list);
-  background: -o-linear-gradient($direction, $list);
-  background: linear-gradient($direction, $list);  
+  background-image: -webkit-linear-gradient($direction, $list);
+  background-image: -moz-linear-gradient($direction, $list);
+  background-image: -o-linear-gradient($direction, $list);
+  background-image: linear-gradient($direction, $list);  
 }
 
 

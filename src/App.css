@@ -6,16 +6,22 @@
   text-shadow: inset 0 -0.175em white, inset 0 -0.175em white, inset 0 -0.175em white, inset 0 -0.175em white; }
 
 html {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: lavenderblush; }
+  background-color: #000;
+  background-image: linear-gradient(160deg, #fff 20%, lavenderblush 100%); }
 
 html body {
-  margin: 10vh 5vw 10vh 5vw; }
+  margin: 0 5vw 10vh 0; }
 
-html body div#SiteRouter {
+html body div#tori-dev {
   font-family: "Inconsolata", monospace, sans-serif;
   font-size: 16px;
   color: #333;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap; }
+
+html body div#tori-dev div#content {
+  margin-left: 20vw; }

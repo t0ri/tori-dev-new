@@ -35,8 +35,8 @@ export default class Articles extends Component {
     return (
       <section id="Article">
         <h1>
-          Check out my technical articles on Medium
-          <span role="img" aria-label="eyes"> 👀</span>
+          My Articles
+          <span role="img" aria-label="notebook"> 📓</span>
         </h1>
         <div id="cards">
           {/* Map article JSON to Cards */}

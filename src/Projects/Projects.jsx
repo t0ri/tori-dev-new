@@ -6,7 +6,6 @@ import './projects.scss'
 
 // Projects Class Component
 // Returns Projects Page Content
-// Renders when route is `/projects`
 export default class Projects extends Component {
   constructor(props) {
     super(props)
@@ -77,8 +76,8 @@ export default class Projects extends Component {
       <section id="Project">
         <div id="header">
           <h1>
-            I&apos;ve worked on some cool projects
-            <span role="img" aria-label="laptop, coffee cup"> 💻 </span>
+            My Projects
+            <span role="img" aria-label="desktop computer"> 🖥️ </span>
           </h1>
         </div>
 

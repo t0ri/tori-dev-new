@@ -1,7 +1,14 @@
 @import '../variables.scss';
 
 section#Index {
-  height: 100vh; // positions nav
+  height: 90vh;
+
+  display: flex;
+  @include flex-flow(column nowrap);
+  @include justify-content(space-around);
+
+  margin-bottom: 15vh;
+  scroll-snap-align: center;
 
   h1 {
     font-size: 3em;
